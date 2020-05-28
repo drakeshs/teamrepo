@@ -24,7 +24,7 @@ const UpComingEvents = () => {
         });
     };
     fetchData();
-    return () => (mounted = false); // eslint-disable-line
+    return () => (mounted = false);// eslint-disable-line
   }, []);
 
   const parsedData =
