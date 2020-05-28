@@ -1,5 +1,4 @@
 body {
-  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -7,7 +6,98 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container {
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.redText{ 
+  color:red;
+}
+
+.child {
+  display: inline-flex;
+}
+
+.subcontainer {
+  margin-top: 10px;
+}
+.borderedbox {
+  border: 1px solid black;
+}
+.buttonalign {
+  display: flex;
+  justify-content: space-between;
+}
+
+.inlineTable {
+  display: flex;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+.card {
+  width: 250px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #87ceeb;
+  text-align: center;
+  margin-right: 5px;
+}
+
+.cardheader {
+  color: white;
+  padding: 25px;
+  font-size: 18px;
+}
+
+.cardtextborder{
+  border: 1px solid black;
+}
+
+.right_text{
+  float: right;
+  margin-right: 2px;
+}
+
+.left_text{
+  float: left;
+  margin-left: 2px;
+}
+
+* {box-sizing: border-box;}
+
+.wrapper {
+  border-radius: 5px;
+}
+
+.wrapper > div {
+    padding: .5em;
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  grid-gap: 0px;
+}
+
+.contentwrapper {
+  border-radius: 5px;
+}
+
+.contentwrapper > div {
+  padding: 0;
+}
+.contentwrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  grid-gap: 0px;
+}
+
+.zeroPadding{
+  padding: 0px;
 }
